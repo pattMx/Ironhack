@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1 / day 3</title>
+    <style>
+        *{
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+    }
+
+    .container{
+        max-width: 80%;
+        margin: 30px auto;
+    }
+
+    /*ontainer boxes*/
+    .box{
+        background: #f4f4f4;
+        border: solid 1px #000;
+        padding: 20px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .box p{
+        text-align: justify;
+    }
+
+    a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .btn{
+            background-color: #db80ff;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;        
+        }
+        .btn:hover{
+            background: #fa03ee;
+            color: #fafafa;
+        }
+
+        a:active{
+            color: blue;
+        }
+
+        .box ~ p{
+            color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <a href="#" class="btn">HTML & CSS</a>
+            <div class="box" id="box-1">
+                <h3>HTML & CSS</h3>
+                <p>we learned that HTML is a language for creating web pages and applications. Its elements are the building blocks of web pages. Also, we learned that the DOM is a file that contains the elements of an HTML document, their format and the browser state at a specific moment.
+                Additionally, we learned to use block-level and inline elements. Block elements begin a new line on the webpage and, if no width is set, they extend the full width of the available horizontal space.
+                On the contrary, inline elements’ width only extends as far as its tag defines it.
+                Hidden elements are those that aren’t displayed at all.
+                The following elements are “block-level”: p, pre, small, h1 to h6, ol, ul, li, table, form, fieldset and many more!
+                The following elements are “inline”: em, i, small, strong, time, a, br, img, script, span, button, input, label, select, textarea…</p>
+            </div>
+            <p>Prueba de Hermanos</p>
+            <div class="box" id="box-2">
+                <a href="#" class="btn">JavaScript</a>
+                <h3>JS</h3>
+                    <p>After this lesson we will be able to: Explain what JavaScript is and a bit of its history,             Explain what ES6 is and how JavaScript evolved,               Understand and apply basic JavaScript syntax, Declare variables in JavaScript,           Properly name variables</p>
+                </div>
+            </div>
+        <footer>
+            <button class="btn">My button</button>
+        </footer>
+    </section>
+</body>
+</html>

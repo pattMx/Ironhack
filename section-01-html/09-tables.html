@@ -1,96 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tables</title>
     <style>
-        * {
-          font-family: arial, sans-serif;
-        }
-        table {
-          border-collapse: collapse;
-          width: 100%;
-        }
-  
-  
-        .schedule {
-          font-size: 12px;
-        }
+      * {
+        font-family: arial, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
 
-        h2{
-            text-align: center;
-            color: slateblue;
-        }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
 
-        #dish-table{
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
 
-            text-align: center ;
-            color: rebeccapurple;
-            background-color: #7c90ff;
-            border: 1px solid #061046;
-        }
-
-        .head-table{
-            text-align: center;
-            color: rgb(255, 255, 255);
-            border: 1px solid #061046;
-            padding: 8px;
-        }
-
-        .dish-name{
-            border: 1px solid #061046;
-        }
-
-        .img{
-            border: 1px solid #061046;
-        }
-
-        .dish-locate{
-            border: 1px solid #061046;
-        }
-
-        .dish-raking{
-            border: 1px solid #061046;
-        }
-
+      .schedule {
+        font-size: 12px;
+      }
     </style>
-</head>
-<body>
-    <h2>Favorite Food</h2>
-    <table id="dish-table">
-        <tr class="head-table">
-            <th class="dish-name">Plato</th>
-            <th class="img">imagen</th>
-            <th class="dish-locate">Procedecncia</th>
-            <th class="dish-raking">Ranking</th>
-        </tr>
-        <tr class="first-dish">
-            <td class="dish-name">Enchiladas</td>
-            <td class="img"><img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5FBFFFED-E63C-4B1F-9470-AA301ADDBC7D/Derivates/b13978f1-38a8-43a2-8969-d5ff091efe70.jpg" alt="Enchiladas" width="150" height="100"></td>
-            <td class="dish-locate">Mexico</td>
-            <td class="dish-raking">1</td>
-        </tr>
-        <tr class="second-dish">
-            <td class="dish-name">Chilaquiles Verdes</td>
-            <td class="img"> <img src="https://sibeti.com/wp-content/uploads/2021/10/como-hacer-receta-de-chilaquiles-verdes-1200x900.jpg" alt="Chilaquiles" width="150" height="100"> </td>
-            <td class="dish-locate">Mexico</td>
-            <td class="dish-raking">4</td>
-        </tr>
-        <tr class="third-dish">
-            <td class="dish-name">Pollo Empanizado </td>
-            <td class="img"> <img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2021/04/pechuga-empanizada-con-pure-y-ensalada.jpg" alt="Pollo Empanizado" width="150" height="100"> </td>
-            <td class="dish-locate">Mexico</td>
-            <td class="dish-raking">2</td>
-        </tr>
-        <tr class="forth-dish">
-            <td class="dish-name">Tamales de Mole </td>
-            <td class="img"> <img src="https://i.blogs.es/c08a4a/images-12-/650_1200.jpeg" alt="Pollo Empanizado" width="150" height="100"> </td>
-            <td class="dish-locate">Mexico</td>
-            <td class="dish-raking">3</td>
-        </tr>
-        
-    </table>  
-</body>
+  </head>
+  <body>
+    <h1>Tables</h1>
+
+    <p>
+      HTML tables allow web developers to arrange data into rows and columns.
+    </p>
+
+    <p>A table in HTML consists of table cells inside rows and columns.</p>
+
+    <h5>Syntax</h5>
+    <ul>
+      <li>table element = defines table</li>
+      <li>tr = defines table row</li>
+      <li>th = defines table head</li>
+      <li>td = defines table display</li>
+    </ul>
+    <hr />
+    <h2>Example Table 1</h2>
+    <table>
+      <tr>
+        <th>Artist / Band Name</th>
+        <th>Genre</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>The Strokes</td>
+        <td>Rock</td>
+        <td>New York, USA</td>
+      </tr>
+      <tr>
+        <td>Backstreet Boys</td>
+        <td>Pop</td>
+        <td>Orlando, Florida</td>
+      </tr>
+      <tr>
+        <td>Black Sabbath</td>
+        <td>Metal/Rock</td>
+        <td>Birmingham, England</td>
+      </tr>
+    </table>
+    <hr />
+    <h2>Example Table 2</h2>
+    <table class="schedule">
+      <tr>
+        <th>Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td>9:00 - 21:00</td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td>x</td>
+      </tr>
+      <tr>
+        <td>12:00-12:00</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>21:00-12:00</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+    </table>
+  </body>
 </html>
