@@ -4,7 +4,7 @@ BOOTCAMP WEB
 FULL TIME
 07/11/02
 
-# Semana 1
+# Week 1
 
 ### Day 1
 
@@ -48,7 +48,7 @@ FULL TIME
 
 - Using flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices
 
-# Semana 2
+# Week 2
 
 ### Day 1
 
@@ -61,3 +61,9 @@ FULL TIME
 - In this lesson, we learned how to declare, use, and manipulate numbers and strings - two primitive data types. Also, we got familiar with some of the inherited number and string methods as well as with some of the new ones
 
 - We have learned that besides string and number, there are other primitive data types that you will be using heavily: boolean, null and undefined. Variables that have boolean values can only have the value of true or false. Booleans are very often used with logical operators: and (&&), or (||), not (!). Besides being true or false, variables also can have truthy and falsy values.
+
+### Day 3
+
+- In this lesson, we learned about the DOM elements and how to create, modify and delete them and their different parts: contents, attributes and the element itself.
+
+- We learned about events and how to add them to any element in the DOM. Also, we learned about the event object and how to manage it
