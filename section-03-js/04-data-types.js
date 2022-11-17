@@ -1,138 +1,181 @@
-// console.log(8);
-// console.log(8.5);
-// // nan === not a number
-// let f = "hello"
-// console.log(8 / f);
+// Data types JS
 
-// // strings
-// console.log('patricia');
-// console.log("784");
+// Tenemos 2 tipos de datos en este tipo de lenguaje :)
 
-// // Boolean dato relacionado a verdad, probabilidad
+// Tenemos Datos Primitivos y noPrimitivos. En pocas palabras los datos primitivos representan un valor y los datos no primitivos los podemos entender como composiciones de datos primitivos, que vendrian siendo lo que en JS llamamos "OBJETOS o ARRAYS"
 
-// console.log(true);
-// console.log(false);
+// Segun MDN los datos primitivos son tipos de datos que no estan compuestos por un objeto, array y no tenga algun metodo.
 
-// // null
+// En JS tenemos estos 6 tipos de datos primitivos:
 
-// console.log(null)
+//     - numeros
+//     - strings
+//     - Booleanos
+//     - null
+//     - undefined
+//     - symbolos -  — that's guaranteed to be unique.
 
-// undefined
-// let paty = undefined
+// Datos Primitivos - Examples
 
-// console.log(typeof paty);
+// Numeros
+console.log(8);
+console.log(8.5);
+//nan === not a number
+let f = "hello";
+console.log(8 / f); // NAN;
 
-// let barcelona = Symbol("borne")
-// console.log(typeof barcelona);
-// console.log(Symbol("borne") === Symbol("borne"));
+// Strings
+console.log("Wu tang clan is for the children");
+console.log("8"); // esto se parsea como un STRING ya que el "8" esta dentro de los doubleQuotes.
 
-// console.log("this is table paty");
+// Booleanos - TRUE || FALSE
+console.log(true);
+console.log(false);
+
+// null
+console.log(null);
+
+//Undefined
+let diego = undefined;
+// ESTO NO ES LO MISMO PORQUE JS LO PARSEA COMO UN STRING VACIO YA QUE TIENE LOS DOUBLEQUOTES DESPUES DE INICIALIZAR LA VARIABLE
+//let diego = "";
+console.log(typeof diego);
+
+// Symbol
+let barcelona = Symbol("borne");
+console.log(typeof barcelona);
+console.log(Symbol("borne") === Symbol("borne"));
+
+// En JS tenemos estos 2 tipos de datos noPrimitivos:
+
+//     - Arrays - Arrays
+//     - Objects - Objetos
+//
+// Datos No Primitivos - Examples
+
+// Array
+
+// Array Example - 1
+// UNCOMMENT TO DISPLAY CODE
+// console.log("This is my cool table of Funk Artists:");
+// console.log("Using just strings");
 // console.table([
-//     "green day",
-//     "Arctic Monkeys",
-//     "Post Malone",
-//     "Rihanna",
-//     "Muse",
-
+//   "Daft Punk",
+//   "Marc Rebillet",
+//   "Anderson Paak",
+//   "Silk Sonic",
+//   "Los Amigos Invisibles",
 // ]);
 
-// console.log("this is table paty");
-// console.log("Mix of primitive datatypes");
+// Array Example - 2
+// UNCOMMENT TO DISPLAY CODE
+// console.log("This is my cool table of Funk Artists:");
+// console.log("Mix of primitive dataTypes");
 // console.table([
-//     "green day",
-//     5,
-//     "Rihanna",
-//     false,
-//     "muse",
-//     undefined,
+//   "Daft Punk",
+//   5,
+//   "Anderson Paak",
+//   false,
+//   "Los Amigos Invisibles",
+//   undefined,
 // ]);
 
-// objetos
+// Objetos
 // ejemplo syntax initialization = {}
-// ejemplo syntax context = { key: "value"}
+// ejemplo syntaxt context = { key: "value" }
 
-// console.log("my bio");
+// EXAMPLE - 1
+// COMPLEX
+console.log("My Bio");
 // console.table({
-//     firstNAme: "Patricia",
-//     lastName: "Sanchez",
-//     ocuppation: "Student",
-//     hobbies: ["music", "guitar playing", "piano", "surfing", "Cycling"],
-    
-//     skills: {
-//         surfing: "Excellent",
-//         skiing: 0,
-//         guitar: ["Acoustic", "electronic"],
-//         instruments: {
-//             percussion: ["Drums", "Toms", "Snares", "Cymbal"],
-//             string: [ "guitar", "Bass", "cuatro"],
-//         }
-//     }
+//   firstName: "Diego",
+//   lastName: "Zito",
+//   ocuppation: "FE - Instructor",
+//   hobbies: [
+//     "Music",
+//     "Guitar Playing",
+//     "Piano",
+//     "Surfing",
+//     "Cycling",
+//     "Stoicism",
+//   ],
+//   skills: {
+//     surfing: "Excellent",
+//     skiing: 0,
+//     guitar: ["Acoustic", "Electronic"],
+//     instruments: {
+//       percussion: ["Drums", "Toms", "Snares", "Cymbal"],
+//       string: ["Guitar", "Bass", "Cuatro"],
+//     },
+//   },
 // });
 
-// // ejemplo 2, array de objetos
-
+// EXAMPLE 2
+// ARRAY OF OBJECTS
 // console.table([
-//     {
-//         movie: "The devil Wears Prada",
-//         genero: ["comedia", "Drama"],
-//         director: ["David Frankel"],
-//         location: ""
-//     },
-//     {
-//         movie: "El viaje de chihiro",
-//         genero: ["fantasia", "aventura"],
-//         director: ["Hayao Miyazaki"],
-//         location: "Japon"
-//         actors: ["Rumi Hiiragi", "Miyu Irino"]
-//         year: 2021,
-//     },
-//     {
-//         movie: "Jhon wick",
-//         genero: ["accion"],
-//         director: ["Chad Stahelski"],
-//         location: "Estados Unidos",
-//         actors: ["Keanu Reeves", "Mikael Nyqvist", "Alfie Allen"]
-//         year: 2014,
-//     }
-// ])
+//   {
+//     movie: "Wolf of Wallstreet",
+//     genre: ["Drama", "Action", "Comedy"],
+//     director: ["Martin Scorsese"],
+//     location: "New York City, NY",
+//     actors: ["Jonah Hill", "Margo Robbie", "Leo Di Caprio"],
+//     year: 2010,
+//   },
+//   {
+//     movie: "Fight Club",
+//     genre: ["Drama", "Noir", "Comedy", "Action"],
+//     director: ["David Fincher"],
+//     location: "Los Angeles, California",
+//     actors: ["Bradd Pitt", "Edward Norton", "Helena Bonham Carter"],
+//     year: 1999,
+//   },
+//   {
+//     movie: "The Neon Demon",
+//     genre: ["Aleix", "Thriller", "Drama"],
+//     director: ["Nicolas Winding Refn"],
+//     location: "Copenhagen, Denmark",
+//     actors: ["Elle Fanning", "Jenna Malone", "Keanu Reeves"],
+//     year: 2016,
+//   },
+// ]);
 
-
-
-// let firstHM = 
-//     {
-//         firstNAme: "Patricia",
-//         lastName: "Sanchez",
-//         citiesILivedIn: ["Monterrey", "Puebla", "Poza Rica de Hidalgo", "Papantla de Olarte", "Sabadell"],
-//         age: 27,
-//     DoB: "07/07/1995",
-//     drinkalcohol: false,
-// }
-    
-// console.log("user drinks alchohol:" + `${firstHM.drinkalcohol}`);
-
-let secondHM = [
-    {
-        bookName: "el hombre mas rico de Babilonia",
-        genre: [" autoyuda"],
-        author: "George Samuel Clason",
-        year: 1926,
-        isbn: 9783756523412,
-    },
-    {
-        bookName: "EL toque de midas",
-        genre: ["Educacion financiera"],
-        author: "Robert T. Kiyosaki ",
-        year: 2015,
-        isbn: 6073131739,
-    },
-    {
-        bookName: "Game of thrones",
-        genre: ["Novela", "Fantasia", "fisccion"],
-        author: "George R. R, Martin",
-        year: 1996,
-        isbn: 9783030250416,
-    },
+// Using the same object but storing it within a variable:
+const movies = [
+  {
+    movie: "Wolf of Wallstreet",
+    genre: ["Drama", "Action", "Comedy"],
+    director: ["Martin Scorsese"],
+    location: "New York City, NY",
+    actors: ["Jonah Hill", "Margo Robbie", "Leo Di Caprio"],
+    year: 2010,
+  },
+  {
+    movie: "Fight Club",
+    genre: ["Drama", "Noir", "Comedy", "Action"],
+    director: ["David Fincher"],
+    location: "Los Angeles, California",
+    actors: ["Bradd Pitt", "Edward Norton", "Helena Bonham Carter"],
+    year: 1999,
+  },
+  {
+    movie: "The Neon Demon",
+    genre: ["Aleix", "Thriller", "Drama"],
+    director: ["Nicolas Winding Refn"],
+    location: "Copenhagen, Denmark",
+    actors: ["Elle Fanning", "Jenna Malone", "Keanu Reeves"],
+    year: 2016,
+  },
 ];
 
-console.log(`My favorite Book is  ${secondHM[0].bookName}`);
+console.table(movies);
+console.log(movies[0].actors[1]);
+// Conventional Way - PRIOR ES6
+console.log(
+  "My favorite actor of the movie Wolf of Wallstreet is " + movies[0].actors[1]
+);
 
+// Modern Way - POST ES6
+// Template Literals
+console.log(
+  `My Fav actor of wolfie using template literals would be ${movies[0].actors[1]}`
+);
