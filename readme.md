@@ -67,3 +67,21 @@ FULL TIME
 - In this lesson, we learned about the DOM elements and how to create, modify and delete them and their different parts: contents, attributes and the element itself.
 
 - We learned about events and how to add them to any element in the DOM. Also, we learned about the event object and how to manage it
+
+### Day 4
+
+- In this lesson, we learned how to iterate over arrays, and perform different tasks such as mapping, reducing or filtering.
+
+- Manipulating arrays to get the data we want is one of the most common tasks in programming so don’t hesitate to spend some extra time on these topics since knowing them will make you better developer for sure
+
+### Day 5
+
+- We learned that function declarations get hoisted and can be called before being defined in the code, which has both positive and negative implications. Function expressions enforce a better structured code.
+
+- We learned that functions can be passed as arguments to other functions, and then we saw how that looks in the case of closures.
+
+- We learned that some functions can only be used once so there’s no need to name them (aka anonymous functions).
+
+# Week 3
+
+### Day 1
