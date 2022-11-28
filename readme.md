@@ -84,4 +84,6 @@ FULL TIME
 
 # Week 3
 
-### Day 1
+### Day 1 to day 5
+
+- Project Development
